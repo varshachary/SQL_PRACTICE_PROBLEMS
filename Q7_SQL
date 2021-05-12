@@ -1,1 +1,16 @@
 /* Q7)Explain a use case where you would use a self join */
+What is self join?
+As the name suggests its a join established inside a same table similar to a self loop.
+Use case for self join:
+Incase if a HR team wants to map its employee with the manager name where in the base table they have manager id(same as employee id) associated with the each employee.
+Under this scenario,let's assume there are some null values in the managerID as the team has to recruit new managers for some employees.
+Table Structure:
+Table Name:Employee
+Columns:ID,EmployeeName,ManagerID
+Desired output mapping:
+Columns:EmployeeID,EmployeeName,ManagerName
+Query:
+SELECT e.ID as EmployeeID,e.EmployeeName as EmployeeName,m.EmployeeName as ManagerName
+from Employee e
+left join Employee m
+on e.ID=m.ID
