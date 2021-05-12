@@ -1,0 +1,6 @@
+/*
+Sales are reported across quarters for stores. There are 100 stores and there are 4
+quarters for each store (a total of 400 rows).
+Find out the difference in sales between the adjacent quarters of the same store (Q4-Q3,
+Q3-Q2, Q2-Q1)
+*/
