@@ -23,3 +23,7 @@ INSERT INTO sales values(2,"zomato",3000,3);
 INSERT INTO sales values(2,"zomato",4000,4);
 --display the table
 select * from sales ;
+---previous value
+select Sales_value,LAG(Sales_value,1,0) over (order by Sales_value) as previous_val group by from sales;
+--next value
+select Sales_value,LEAD(Sales_value,1,0) over (order by Sales_value) as previous_val group by from sales;
