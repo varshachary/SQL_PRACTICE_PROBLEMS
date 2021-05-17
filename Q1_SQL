@@ -17,9 +17,9 @@ INSERT INTO sales values(1,"swiggy",1000,2);
 INSERT INTO sales values(1,"swiggy",3000,3);
 INSERT INTO sales values(1,"swiggy",4000,4);
 
-INSERT INTO sales values(1,"zomato",2000,1);
-INSERT INTO sales values(1,"zomato",1000,2);
-INSERT INTO sales values(1,"zomato",3000,3);
-INSERT INTO sales values(1,"zomato",4000,4);
+INSERT INTO sales values(2,"zomato",2000,1);
+INSERT INTO sales values(2,"zomato",1000,2);
+INSERT INTO sales values(2,"zomato",3000,3);
+INSERT INTO sales values(2,"zomato",4000,4);
 --display the table
 select * from sales ;
